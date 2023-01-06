@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/US579/us579.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/US579/us579.github.io/static/js/main.76f4cfb6.js",
+    "static/js/787.a37f46eb.chunk.js": "/US579/us579.github.io/static/js/787.a37f46eb.chunk.js",
+    "static/media/logo.svg": "/US579/us579.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/US579/us579.github.io/index.html",
+    "main.073c9b0a.css.map": "/US579/us579.github.io/static/css/main.073c9b0a.css.map",
+    "main.76f4cfb6.js.map": "/US579/us579.github.io/static/js/main.76f4cfb6.js.map",
+    "787.a37f46eb.chunk.js.map": "/US579/us579.github.io/static/js/787.a37f46eb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.76f4cfb6.js"
+  ]
+}
