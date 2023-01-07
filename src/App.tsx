@@ -1,14 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/header';
+import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 
-function App() {
+import Header from "./components/Header";
+import About from "./components/pages/About";
+import Home from "./components/pages/Home";
+
+import "./App.css";
+
+const App = () => {
+  const routes = useRoutes([
+    { path: "/about", element: <About /> },
+    { path: "/", element: <Home /> },
+  ]);
   return (
-    <div className="App">
+    <div>
       <Header />
+      {routes}
     </div>
   );
-}
+};
 
-export default App;
+const AppWrapper = () => {
+  return (
+    <Router>
+      <App />
+    </Router>
+  );
+};
+
+export default AppWrapper;

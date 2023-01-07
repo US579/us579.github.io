@@ -32,9 +32,10 @@ header.header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 2.5rem;
+    height: 3rem;
     background: black;
     box-shadow: 0 1px 1px black;
+    z-index: 100;
 }
 
 header .logo-wrapper {
@@ -60,5 +61,30 @@ header .logo {
 
 header .logo span {
   margin-left: 0.54rem;
+}
 
+/* post */
+
+.article {
+  margin: 4rem 0;
+}
+.post-wrapper h1 {
+ color: white;
+}
+
+/* Code  */
+.code {
+position: relative;}
+
+.code .copy-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 5;
+
+}
+
+.profileImg {
+ width: 10rem;
+ margin-left: 45%;
 }

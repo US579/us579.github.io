@@ -1,0 +1,33 @@
+repos:
+  # Frontend/Typescript
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v2.7.1
+    hooks:
+      - id: prettier
+        description: Checks for correct formatting on all staged frontend files
+        stages: [commit]
+        files: ^src/
+        types_or: [javascript, jsx, ts, tsx]
+        entry: prettier 
+
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v8.18.0
+    hooks:
+      - id: eslint
+        description: Checks for correct linting on all staged frontend files
+        stages: [commit]
+        args: [--fix]
+        files: ^src/
+        types_or: [jsx, ts, tsx]
+        types: [file]
+        additional_dependencies:
+          - eslint@8.18.0
+          - eslint-config-prettier@8.5.0
+          - eslint-plugin-prettier@4.1.0
+          - eslint-plugin-react@7.30.1
+          - eslint-plugin-react-hooks@4.6.0
+          - typescript@4.7.4
+          - "@typescript-eslint/eslint-plugin@5.30.0"
+          - "@typescript-eslint/parser@5.30.0"
+
