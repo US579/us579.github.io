@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { IconWrapper } from './styles';
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import ImageIcon from "../icons/ImageIcon";
 import { HeaderContainer, Icon, Links, LinkItem } from "./styles";
 
@@ -7,8 +8,8 @@ const Header = () => {
     <HeaderContainer>
       <Icon><ImageIcon /></Icon>
       <Links>
-        <LinkItem href="#/projects">Projects</LinkItem>
-        <LinkItem href="#/thoughts">Thoughts</LinkItem>
+        {/* <LinkItem href="#/projects">Projects</LinkItem> */}
+        <LinkItem href="#/thoughts">Blogs</LinkItem>
       </Links>
     </HeaderContainer>
   );

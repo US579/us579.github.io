@@ -1,3 +1,4 @@
+import React from 'react';
 import { GithubIcon } from "../../icons/Github";
 import { LinkedIn } from "../../icons/LinkedIn";
 import {
@@ -12,15 +13,11 @@ import {
 const About = () => {
     return (
         <PageContainer>
-            <GreetingContent>Hi, I'm Steven Liu</GreetingContent>
+            <GreetingContent>Hi, I'm Steven Liu </GreetingContent>
             <TextContent>
                 I've always loved solving problems and being a technophile who
                 was obsessed with the latest tech.
             </TextContent>
-            <LinkContainer>
-                <GithubIcon />
-                <LinkedIn />
-            </LinkContainer>
             <AboutMeHeader>About me</AboutMeHeader>
             <AboutMeContent>
                 I am working as a software engineer and I live in Sydney,
@@ -34,15 +31,16 @@ const About = () => {
                 tools to make people's life easier.
             </AboutMeContent>
             <AboutMeContent>
-                While technology and tinkering are passions of mine and working
-                in this area brings me joy & pride, I also enjoy playing
-                basketball, traveling, and cooking. Chinese cuisine is my
-                favorite.
+            Although technology and tinkering are my passions and bring me a great sense of joy and pride, I also love playing basketball, traveling, and cooking—especially Chinese cuisine, which is my favorite.
             </AboutMeContent>
             <AboutMeContent>
                 Feel free to reach me on{" "}
                 <a href="mailto:wzus579@gmail.com">Email</a>.{" "}
             </AboutMeContent>
+            <LinkContainer>
+                <GithubIcon />
+                <LinkedIn />
+            </LinkContainer>
         </PageContainer>
     );
 };

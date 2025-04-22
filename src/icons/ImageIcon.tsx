@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from '../assets/avator.png';
 import { IconWrapper, ImageElement, StyledLink } from './styles';
 
