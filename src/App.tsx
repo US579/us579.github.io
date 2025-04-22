@@ -5,9 +5,9 @@ import {
 } from "react-router-dom";
 import About from "./components/pages/About";
 import Header from "./components/Header";
-import Thoughts from "./components/pages/Blogs";
-import Projects from "./components/pages/Project";
+import Blogs from "./components/pages/Blogs";
 import React from 'react';
+import BlogPage from "./components/pages/BlogPage";
 
 function App() {
     return (
@@ -15,8 +15,8 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" Component={About} />
-                <Route path="/projects" Component={Projects} />
-                <Route path="/thoughts" Component={Thoughts} />
+                <Route path="/blogs" Component={Blogs} />
+                <Route path="/blog/:id" element={<BlogPage />} />
             </Routes>
         </div>
     );
