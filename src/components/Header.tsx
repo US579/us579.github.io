@@ -9,7 +9,7 @@ const Header = () => {
       <Icon><ImageIcon /></Icon>
       <Links>
         {/* <LinkItem href="#/projects">Projects</LinkItem> */}
-        <LinkItem href="#/blogs">Blogs</LinkItem>
+        {/* <LinkItem href="#/blogs">Blogs</LinkItem> */}
       </Links>
     </HeaderContainer>
   );
