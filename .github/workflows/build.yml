@@ -1,4 +1,4 @@
-name: Build
+name: Build and Deploy
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ staging, main ]
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,3 +23,10 @@ jobs:
 
     - name: Build
       run: NODE_OPTIONS=--openssl-legacy-provider npm run build
+
+    - name: Deploy to GitHub Pages
+      if: github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
