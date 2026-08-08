@@ -15,8 +15,6 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" Component={About} />
-                <Route path="/blogs" Component={Blogs} />
-                <Route path="/blog/:id" element={<BlogPage />} />
             </Routes>
         </div>
     );
