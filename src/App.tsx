@@ -5,9 +5,8 @@ import {
 } from "react-router-dom";
 import About from "./components/pages/About";
 import Header from "./components/Header";
-import Blogs from "./components/pages/Blogs";
 import React from 'react';
-import BlogPage from "./components/pages/BlogPage";
+
 
 function App() {
     return (
